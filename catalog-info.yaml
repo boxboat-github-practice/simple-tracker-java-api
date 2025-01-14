@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: simple-tracker-java-api
+  annotations:
+    github.com/project-slug: boxboat-backstage/simple-tracker-java-api
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - java
+    - web-server
+spec:
+  type: backend
+  system: simple-tracker
+  owner: group:fishdank
+  lifecycle: experimental
+  providesApis:
+    - simple-tracker-api
